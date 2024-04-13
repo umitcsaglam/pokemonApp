@@ -5,7 +5,6 @@ plugins {
     //Dagger-Hilt
     id ("kotlin-kapt")
     id ("dagger.hilt.android.plugin")
-
 }
 
 android {
@@ -60,7 +59,9 @@ dependencies {
     implementation(libs.androidx.ui)
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
-    implementation(libs.androidx.material3)
+    implementation (libs.material3)
+    implementation (libs.androidx.material3.android)
+    implementation(libs.androidx.palette.ktx)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -72,6 +73,7 @@ dependencies {
     // Coil
     implementation(libs.coil.compose)
     implementation (libs.accompanist.coil)
+    implementation(libs.coil)
 
     // Retrofit
     implementation (libs.retrofit)
@@ -97,6 +99,8 @@ dependencies {
     implementation (libs.androidx.constraintlayout.compose)
     implementation (libs.androidx.material.icons.core)
     implementation (libs.androidx.material.icons.extended)
+    implementation(libs.androidx.hilt.navigation.fragment)
+
 
     // Dagger Hilt
     implementation (libs.hilt.android.v249)
@@ -105,12 +109,7 @@ dependencies {
     implementation (libs.androidx.hilt.navigation.compose.v120)
     implementation (libs.androidx.hilt.work.v120)
     implementation (libs.androidx.work.runtime.ktx)
-
-
-
-
-
-
+    implementation("androidx.hilt:hilt-*:1.2.0")
 
 
 

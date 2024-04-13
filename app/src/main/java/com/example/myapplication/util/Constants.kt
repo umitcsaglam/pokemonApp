@@ -1,7 +1,6 @@
 package com.example.myapplication.util
 
 object Constants {
-    const val API_KEY=""
-    const val BASE_URL=""
-
+    const val BASE_URL="https://pokeapi.co/api/v2/"
+    const val PAGE_SIZE =20
 }
