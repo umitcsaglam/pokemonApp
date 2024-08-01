@@ -101,7 +101,6 @@ dependencies {
     implementation (libs.androidx.material.icons.extended)
     implementation(libs.androidx.hilt.navigation.fragment)
 
-
     // Dagger Hilt
     implementation (libs.hilt.android.v249)
     kapt (libs.hilt.android.compiler)
@@ -109,8 +108,5 @@ dependencies {
     implementation (libs.androidx.hilt.navigation.compose.v120)
     implementation (libs.androidx.hilt.work.v120)
     implementation (libs.androidx.work.runtime.ktx)
-    implementation("androidx.hilt:hilt-*:1.2.0")
-
-
-
+    implementation(libs.androidx.hilt.z)
 }
